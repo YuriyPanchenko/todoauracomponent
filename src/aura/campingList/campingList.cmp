@@ -66,6 +66,7 @@
         <section class ="slds-card__body">
             <div id="list" class = "row">
                 <aura:iteration items="{!v.items}" var="item">
+                    <p>!!!</p>
                     <c:campingListItem item="{!item}"/>
                 </aura:iteration>
             </div>

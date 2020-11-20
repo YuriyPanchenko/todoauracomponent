@@ -10,11 +10,11 @@ public with sharing class CampingListController {
     }
     
     @AuraEnabled
-    public static Camping_Item__c saveItem(Camping_Item__c saveItem) {
+    public static Camping_Item__c saveItem(Camping_Item__c savedItem) {
         // Perform isUpdateable() checking first, then
-        upsert saveItem;
-
-        return saveItem;
+        System.debug(savedItem);
+        upsert savedItem;
+        return savedItem;
     }
 
 }
