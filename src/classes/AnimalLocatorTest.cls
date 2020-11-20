@@ -1,0 +1,16 @@
+/**
+ * Created by yuriy on 16.11.20.
+ */
+@IsTest
+public with sharing class AnimalLocatorTest {
+    @IsTest
+    static void getElementByIdTest() {
+        // Set mock callout class
+        Test.setMock(HttpCalloutMock.class, new AnimalLocatorMock());
+        // This causes a fake response to be sent
+        // from the class that implements HttpCalloutMock.
+        String response = AnimalLocator.getAnimalNameById(1);
+        // Verify that the response received contains fake values
+        System.assertEquals('chicken', response);
+    }
+}
