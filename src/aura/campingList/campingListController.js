@@ -6,6 +6,7 @@
         action.setCallback(this, function(response) {
             let state = response.getState();
             if (state === "SUCCESS") {
+                console.log("doInit");
                 component.set("v.items", response.getReturnValue());
             }
             else {
