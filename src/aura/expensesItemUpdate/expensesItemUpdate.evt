@@ -1,0 +1,7 @@
+<!--
+ - Created by yuriy on 21.11.20.
+ -->
+
+<aura:event type="COMPONENT" description="expensesItemUpdate">
+    <aura:attribute name="expense" type="Expense__c"/>
+</aura:event>

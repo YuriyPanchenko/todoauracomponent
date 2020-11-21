@@ -1,9 +1,0 @@
-<!--
- - Created by yuriy on 18.11.20.
- -->
-
-<aura:component description="helloWorld">
-    <aura:attribute name="message" type="String" default="xxx"/>
-    <aura:attribute name="int1" type="Integer" default='2'/>
-    <p>Hello! {!v.int1 + v.int1}</p>
-</aura:component>
